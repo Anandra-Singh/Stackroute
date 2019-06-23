@@ -1,0 +1,234 @@
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+.nav-heading {
+    color: white;
+    margin-left: 30px;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+
+
+header {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+nav {
+    background-color: black;
+    height: 80px;
+}
+
+
+nav h1 {
+    padding-top: 15px;
+    color: white;
+}
+
+nav li {
+    float: right;
+    margin-top: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    color: #FFFFFF;
+
+}
+
+nav ul li a :hover {
+    color: cyan;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.hero::before {
+    background-image: url(/img/steak.jpg);
+    background-size: cover;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.9;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.hero-message {
+    color: #FFFFFF;
+    text-shadow: #343a40 2px 2px;
+    min-width: 100%;
+    min-height: 12 em;
+    position: relative;
+}
+
+.hero-message::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 0;
+    min-width: 100%;
+    min-height: 12em;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+@media(min-width:1024px) {
+    .hero-message {
+        min-width: 50%;
+        min-height: 12em;
+    }
+
+    .hero-message::before {
+        margin-left: 25%;
+        min-width: 50%;
+        min-height: 12em;
+    }
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #eee;
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    text-align: center;
+}
+
+.hero-title,
+.hero-sub-title {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.hero-sub-title {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.hero-title {
+    margin: 3% 0;
+    font-family: 'Playball', cursive;
+    font-size: 100px;
+}
+
+.hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background-color: black;
+}
+
+.three-column {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.grid_4 {
+    grid-column-gap: 20px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+h1,
+p {
+    text-align: center;
+
+}
+
+.img1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 250px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.section-2-gap {
+    margin: 50px 50px;
+
+}
+
+.section-2-gap h1 {
+    margin-bottom: 15px;
+}
+
+.two-column {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.two-column h1 {
+    margin-bottom: 30px;
+}
+
+.two-column img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 250px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+footer {
+    height: 150px;
+    background-color: rgb(199, 196, 196);
+}
+
+
+.social i {
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.last-line {
+    margin-top: 10px;
+    margin-left: 90px;
+    word-spacing: 10px;
+}
